@@ -26,7 +26,7 @@ public class PVServiceImpl implements PVService{
     @Override
     public Long getPVNumsByAppId(String appId) {
         QueryWrapper<PV> qw = new QueryWrapper<>();
-        qw.eq("user_id",appId);
+        qw.eq("app_id",appId);
         Long count = pvMapper.selectCount(qw);
         return count;
     }

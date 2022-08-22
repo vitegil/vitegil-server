@@ -43,7 +43,7 @@ public class PVController {
         int[] timeArr = pvService.getPVByTime(appId);//根据时间获取PV数
         int totalPV = pvService.getPVNumsByAppId(appId).intValue();//获取总PV数
         HashMap<String,Object> map = new HashMap<>();
-        map.put("tatalUV",totalPV);
+        map.put("tatalPV",totalPV);
         map.put("timeArr",timeArr);
         return Result.ok(map);
     }
