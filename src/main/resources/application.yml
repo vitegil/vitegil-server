@@ -1,0 +1,13 @@
+server:
+  port: 10002
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://82.157.232.71/vitegil_db?serverTimezone=Asia/Shanghai
+    username: vitegiler
+    password: vitegil123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #将mybatis-plus的日志（sql语句）打印到控制台
