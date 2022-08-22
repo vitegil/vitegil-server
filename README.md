@@ -25,5 +25,40 @@
 > - 数据库表的设计优化
 > - ...
 
+项目主要结构：
+
+> ```Bash
+> .
+> ├─src
+> │  ├─main
+> │  │  ├─java
+> │  │  │  └─com
+> │  │  │      └─vitegil
+> │  │  │          │  VitegilApplication.java #项目的启动类
+> │  │  │          │
+> │  │  │          ├─config #配置跨域
+> │  │  │          │
+> │  │  │          ├─controller #Controller层
+> │  │  │          │
+> │  │  │          ├─mapper #mapper层
+> │  │  │          │
+> │  │  │          ├─pojo #实体类，pojo层
+> │  │  │          │
+> │  │  │          ├─service #业务逻辑层
+> │  │  │          │
+> │  │  │          └─util #工具类
+> │  │  │
+> │  │  └─resources
+> │  │      │  application.yml #配置文件
+> │  │      │
+> │  │      ├─static
+> │  │      └─templates
+> │  └─test
+> │      └─java
+> │          └─com
+> │              └─vitegil
+> │                      VitegilApplicationTests.java #测试文件
+> ```
+
 > 注：小白一个，仅仅是实现了某些功能
 
